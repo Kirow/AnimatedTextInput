@@ -202,8 +202,12 @@ open class AnimatedTextInput: UIControl {
         setupCommonElements()
     }
 
-    public func configureInputView(inputiew: UIView!) {
-        textInput.configureInputView(newInputView : inputiew)
+    public func configureInputView(inputView: UIView!) {
+        textInput.configureInputView(newInputView : inputView)
+    }
+    
+    public func configureInputAccessoryView(accessoryView: UIView!) {
+        textInput.configureInputAccessoryView(accessoryView: accessoryView)
     }
 
     required public init?(coder aDecoder: NSCoder) {
