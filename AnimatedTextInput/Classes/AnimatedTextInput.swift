@@ -561,6 +561,7 @@ public protocol TextInput {
     var contentInset: UIEdgeInsets { get set }
 
     func configureInputView(newInputView: UIView)
+    func configureInputAccessoryView(accessoryView: UIView)
     func changeReturnKeyType(with newReturnKeyType: UIReturnKeyType)
     func currentPosition(from: UITextPosition, offset: Int) -> UITextPosition?
     func changeClearButtonMode(with newClearButtonMode: UITextFieldViewMode)

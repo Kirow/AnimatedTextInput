@@ -46,6 +46,10 @@ extension AnimatedTextView: TextInput {
         inputView = newInputView
     }
 
+    public func configureInputAccessoryView(accessoryView: UIView) {
+        inputAccessoryView = accessoryView
+    }
+
     public var currentText: String? {
         get { return text }
         set { self.text = newValue }

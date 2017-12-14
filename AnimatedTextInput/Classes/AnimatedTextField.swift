@@ -106,6 +106,10 @@ extension AnimatedTextField: TextInput {
         inputView = newInputView
     }
 
+    public func configureInputAccessoryView(accessoryView: UIView) {
+        inputAccessoryView = accessoryView
+    }
+
     public func changeReturnKeyType(with newReturnKeyType: UIReturnKeyType) {
         returnKeyType = newReturnKeyType
     }
